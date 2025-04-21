@@ -2,79 +2,75 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f9f9f9;
+    background: #f7f9fc;
     color: #333;
     line-height: 1.6;
-  }
-  
-  header {
-    background-color: #0d1b2a;
-    color: #fff;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .navbar {
-    max-width: 1000px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-  }
-  
-  .nav-links a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color: #00b4d8;
-  }
-  
-  .section {
-    max-width: 1000px;
-    margin: 50px auto;
     padding: 20px;
   }
   
-  .card {
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  .container {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
     border-radius: 12px;
-    padding: 30px;
-    margin-bottom: 40px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    color: #003366;
+  }
+  
+  .subtitle {
+    font-size: 1.1em;
+    color: #555;
+  }
+  
+  h2 {
+    color: #003366;
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skills li {
+    background: #e6f0ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.95em;
+    color: #003366;
   }
   
   footer {
     text-align: center;
-    padding: 20px;
-    background-color: #0d1b2a;
-    color: white;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
   }
   
-  /* Responsive tweaks */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
